@@ -69,4 +69,5 @@ WHERE departments.dept_name = 'Sales' OR departments.dept_name = 'Development';
 -- (i.e., how many employees share each last name) in descending order. 
 SELECT COUNT(last_name), last_name
 FROM employees
-GROUP BY last_name;
+GROUP BY last_name
+ORDER BY COUNT (last_name);
